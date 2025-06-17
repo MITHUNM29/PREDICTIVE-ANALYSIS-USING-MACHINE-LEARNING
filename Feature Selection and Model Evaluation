@@ -1,0 +1,53 @@
+# 📊 Project Overview: Feature Selection and Model Evaluation
+
+## 🧩 Objective
+
+The objective of this project is to explore how feature selection impacts machine learning model performance by applying it to a real-world classification problem: diagnosing breast cancer. The project uses the **Breast Cancer Wisconsin dataset**, which includes 30 features derived from digitized medical images, and aims to predict whether a tumor is **malignant** or **benign**.
+
+---
+
+## 🔍 Key Components
+
+### 1. **Dataset**
+- Source: `sklearn.datasets.load_breast_cancer`
+- Size: 569 instances, 30 features
+- Target: Binary classification (0 = malignant, 1 = benign)
+
+### 2. **Feature Selection**
+- Method: `SelectKBest` with ANOVA F-test (`f_classif`)
+- Purpose: Reduce dimensionality and improve model interpretability
+- Selected: Top 10 features with highest statistical significance
+
+### 3. **Model Training**
+- Algorithm: `RandomForestClassifier`
+- Reason: Ensemble model that provides built-in feature importance
+- Environment: Scikit-learn, NumPy, pandas
+
+### 4. **Evaluation**
+- Metrics: Accuracy Score, Classification Report, Confusion Matrix
+- Visualization: Heatmap (Confusion Matrix), Bar Chart (Feature Importance)
+
+---
+
+## 🧪 Tools & Libraries Used
+
+- `scikit-learn`: Feature selection, model training, and evaluation
+- `pandas` / `numpy`: Data manipulation
+- `matplotlib` / `seaborn`: Data visualization
+
+---
+
+## ✅ Outcome
+
+By selecting the top 10 most relevant features, we trained a high-performing Random Forest model that:
+- Achieves high accuracy on the test set
+- Provides clear insight into which features most influence predictions
+- Demonstrates how feature selection improves efficiency without sacrificing performance
+
+---
+
+## 📂 Suggested Next Steps
+
+- Try different feature selection techniques (e.g., mutual_info_classif)
+- Compare with other classifiers (e.g., SVM, XGBoost)
+- Perform cross-validation for more robust evaluation
