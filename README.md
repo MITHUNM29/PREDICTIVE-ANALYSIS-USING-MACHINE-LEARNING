@@ -32,7 +32,7 @@ Finally, we visualize the importance of each selected feature using a bar chart,
 output
 
 
-
+![Image](https://github.com/user-attachments/assets/83b91d27-4844-4738-8ad7-149ff769bb63)
 
 
 
